@@ -26,6 +26,7 @@ services:
 
     rs_queue.service:
         abstract: true
+        class: Mmoreram\RSQueueBundle\Services\Abstracts\AbstractService
         arguments:
             $eventDispatcher: "@event_dispatcher"
             $redis: "@rs_queue.redis"

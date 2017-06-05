@@ -30,7 +30,7 @@ services:
         arguments:
             $eventDispatcher: "@event_dispatcher"
             $redis: "@rs_queue.redis"
-            $queueNamesResolver: "@rs_queue.resolver.queuealias"
+            $queueAliasResolver: "@rs_queue.resolver.queuealias"
             $serializer: "@rs_queue.serializer"
 
     rs_queue.consumer:
